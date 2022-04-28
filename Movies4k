@@ -1,4 +1,41 @@
+
+2. Add code to head tag
+
+Add the following code to the end of your head tag.
+
 <script type="text/javascript">
     var CPABUILDSETTINGS={"it":2531455,"key":"cc8bf"};
 </script>
-<script src="https://d12u7tum9sda5e.cloudfront.net/0459c37.js"></script>
+<script src="https://d12u7tum9sda5e.cloudfront.net/806dbb6.js"></script>
+
+If you are using Wordpress, try using a plugin like Header and Footer to paste the code.
+3. Open Locker with CPABuildLock()
+
+Open the locker using the Javascript function CPABuildLock(). Below are some popular examples:
+
+Open immediately on page load
+
+<script>CPABuildLock();</script>
+
+Open after 5 seconds (5000ms)
+
+<script>setTimeout(CPABuildLock, 5000);</script>
+
+Open when a button is pressed
+
+<button onclick="CPABuildLock()">Click me!</button>
+
+Open 5 seconds after button is pressed
+
+<button onclick="setTimeout(CPABuildLock, 5000);">Click me!</button>
+
+4. (Optional) Define Callback with CPABuildComplete()
+
+After the CPABuild Lock code, define a callback function
+
+<script>
+function CPABuildComplete(){
+	alert("Offer Complete!")
+}
+</script>
+
